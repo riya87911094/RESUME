@@ -1,0 +1,3 @@
+myDjangoEnv/
+__pycache__/
+*.sqlite3
