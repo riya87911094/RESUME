@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+from . import django_heroku
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -105,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en-u s'
 
 TIME_ZONE = 'UTC'
 
@@ -123,6 +125,10 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/images/'
 
+
+STATIC_ROOT = BASE_DIR/'static'
 STATICFILES_DIR = [
        BASE_DIR / 'static'
 ]
+
+django_heroku.settings(locals())
