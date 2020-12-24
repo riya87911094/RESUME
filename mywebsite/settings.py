@@ -27,7 +27,7 @@ SECRET_KEY = 'p5b%98u+a!i1onskwdnfn0s2ie7!2c^p&zzqxbup8mvjm&jr%g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['myresumeweb.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['mmyresumeweb.herokuapp.com','127.0.0.1']
 
 
 # Application definition
