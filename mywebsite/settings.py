@@ -121,12 +121,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
+STATIC_ROOT = '/'
 STATIC_URL = '/static/'
 
 MEDIA_URL = '/images/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static_cdn', 'media_root')
+MEDIA_ROOT = os.path.join(BASE_DIR,'static/images')
 
-STATIC_ROOT = '/'
+
+STATICFILES_DIRS = [
+  BASE_DIR / 'static' ,
+  ]
 
 if os.getcwd() == '/app':
     import dj_database_url
